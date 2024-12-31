@@ -1,0 +1,86 @@
+1. Basic Database Connection and Query
+Objective: Connect to a MySQL database using the mysql command-line client and execute a simple query to retrieve all records from the diagnostic table after creating it.
+Task:
+Log in to MySQL using the mysql command-line tool.
+Create a new database called homework_db.
+Create a table diagnostic with columns id and text.
+Insert a simple record into the table.
+Run a SELECT * FROM diagnostic; query to retrieve all records.
+Skills: Database connection, CREATE and SELECT statements, basic querying.
+  
+2. Using the USE Command and Table Creation
+Objective: Select a database and create a new table inside it.
+Task:
+Create a database called university_db.
+Select this database using the USE command.
+Create a students table with columns student_id, first_name, last_name, and email.
+Insert a few student records into the students table.
+Skills: Database selection, table creation, and basic data insertion.
+  
+3. Inserting and Retrieving Data
+Objective: Implement a basic API in Node.js to insert and retrieve records from a MySQL database.
+Task:
+Modify the provided Express code to insert multiple student records into the students table.
+Create a new route to fetch all student records and send them back as a JSON response.
+Skills: Express routing, database queries, asynchronous operations.
+  
+4. Modifying Tables and Data
+Objective: Add and modify columns in an existing table.
+Task:
+Modify the students table to add a column for age.
+Update some of the existing student records with age information.
+Write a query to select students who are older than 20.
+Skills: Altering tables, updating records, and filtering data.
+
+5. Joining Multiple Tables
+Objective: Perform a JOIN operation between two tables.
+Task:
+Create a new table courses with columns course_id, course_name, and student_id.
+Add a few records to the courses table linking students to courses by their student_id.
+Write a query to select all students and their corresponding courses using an INNER JOIN.
+Skills: Creating multiple tables, foreign keys, and joining tables.
+
+6. Creating and Handling Routes with Express
+Objective: Enhance the Express app to handle CRUD operations.
+Task:
+Add routes to the Express app for:
+Creating a new student record.
+Updating a student’s email.
+Deleting a student record.
+Implement validation to ensure that all required fields are provided when creating or updating a student.
+Skills: Routing in Express, data validation, and handling HTTP requests.
+  
+7. Advanced Querying and Aggregations
+Objective: Perform advanced querying and aggregation using MySQL.
+Task:
+Using the students table, write a query to get the average age of students.
+Write a query to find the oldest student.
+Write a query that groups students by age and counts the number of students in each age group.
+Skills: Aggregation functions (AVG, MAX, COUNT), GROUP BY clause.
+
+8. Transaction Handling in MySQL and Node.js
+Objective: Use MySQL transactions to ensure data consistency.
+Task:
+Implement a route in the Express app that inserts a new student and a new course for that student in a single transaction.
+Ensure that if either insertion fails, the transaction is rolled back and no data is inserted into either table.
+Skills: Transactions, rollback operations, error handling.
+  
+9. Implementing Pagination with MySQL Queries
+Objective: Implement pagination in a MySQL query to limit the results.
+Task:
+Modify the SELECT * FROM students; query to support pagination by using LIMIT and OFFSET.
+Add query parameters to the Express route to allow users to specify the page number and the number of records per page.
+Skills: Pagination, query parameters, dynamic query construction.
+
+10. Building a Complex Database Schema and Using Foreign Keys
+Objective: Design and implement a complex relational schema with foreign keys.
+Task:
+Create the following tables:
+students (columns: student_id, first_name, last_name, email).
+courses (columns: course_id, course_name).
+enrollments (columns: student_id, course_id, enrollment_date).
+Create foreign key constraints between the students and enrollments tables, and between courses and enrollments.
+Write a query that retrieves all students who are enrolled in a specific course.
+Implement an Express route to return students enrolled in a given course, passing the course name as a URL parameter.
+Skills: Database design, foreign keys, complex relationships, and query construction.
+These assignments should help progressively improve your understanding of MySQL and how to use it in conjunction with Node.js, while also increasing in difficulty as you move forward.
